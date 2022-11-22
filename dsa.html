@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>expense app</head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"></script>
+    <body>
+        <form onsubmit="savetocrud(event)">
+            <label>choose expense </label>
+            <input type="number" id="amount" name="amount" /><br><br>
+            <label>choose description</label>
+            <input type="text" id="descriptions" name="descriptions"/><br><br>
+            <label>choose categorys</label>
+            <select name="categorys" id="categorys">
+                <option>movie</option>
+                <option>travel</option>
+                <option>grocerys</option>
+                <option>eb bill</option>
+                <option>house rent</option>
+            </select>
+            <button>submit</button>  
+       </form>
+       <ul id="listofexpenses"></ul>
+       <script src="dsa.js"></script>
+
+    </body>
+</html>
